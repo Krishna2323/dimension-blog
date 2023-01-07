@@ -8,6 +8,7 @@ type ParagraphProps = {
   text?: JSX.Element;
   quote?: Quote;
   people?: Person[];
+  style?: any;
 };
 
 type Quote = {
@@ -18,7 +19,10 @@ type Quote = {
 const Paragraph: React.FC<ParagraphProps> = (props) => {
   const { text, heading, people, quote } = props;
   return (
-    <div className={classes.blog__paragraph}>
+    <div
+      className={classes.blog__paragraph}
+      style={props.style ? props.style : {}}
+    >
       <span className={classes.blog__paragraph__heading}>{heading}</span>
       <div className={classes.blog__paragraph__text}>{text}</div>
 

@@ -49,7 +49,11 @@ export default function Home() {
           heading="The Problem"
         />
         <Paragraph heading="Heading #2" quote={quote} />
-        <Paragraph heading="Heading #2" people={People} />
+        <Paragraph
+          heading="Heading #2"
+          style={{ marginTop: "1.2rem" }}
+          people={People}
+        />
       </Blog>
     </>
   );

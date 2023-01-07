@@ -10,14 +10,16 @@ const Blog: React.FC<{
   const { title, description, subheading } = props;
 
   return (
-    <div className={classes.blog}>
-      <div className={classes.blog__info}>
-        <h1 className={classes.blog__info__heading}>{title}</h1>
-        <h3 className={classes.blog__info__subheading}>
-          {subheading}/{description}
-        </h3>
+    <div style={{ padding: "8rem 16.4rem;" }}>
+      <div className={classes.blog}>
+        <div className={classes.blog__info}>
+          <h1 className={classes.blog__info__heading}>{title}</h1>
+          <h3 className={classes.blog__info__subheading}>
+            {subheading}/{description}
+          </h3>
+        </div>
+        {props.children}
       </div>
-      {props.children}
     </div>
   );
 };

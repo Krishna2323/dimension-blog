@@ -21,43 +21,40 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div style={{ padding: " 8rem 16.4rem;" }}>
-        <Blog
-          title="Blog title"
-          subheading="sub-heading"
-          description="description"
-        >
-          <BlogImage
-            caption="Manage your projects on Dimension."
-            src={BlogImage1}
-            alt="Blog image"
-          />
-          <Paragraph
-            text={
-              <>
+      <Blog
+        title="Blog title"
+        subheading="sub-heading"
+        description="description"
+      >
+        <BlogImage
+          caption="Manage your projects on Dimension."
+          src={BlogImage1}
+          alt="Blog image"
+        />
+        <Paragraph
+          text={
+            <>
+              We believe software development is broken today, millions of
+              tools, hundreds of tabs, and a lack of integration results in a
+              slow, <Link href={"#"}>This is a link</Link>{" "}
+              <strong>painful</strong> development process and a poor developer
+              experience.
+              <br />
+              <p>
                 We believe software development is broken today, millions of
                 tools, hundreds of tabs, and a lack of integration results in a
-                slow, <Link href={"#"}>This is a link</Link>{" "}
-                <strong>painful</strong> development process and a poor
-                developer experience.
-                <br />
-                <p>
-                  We believe software development is broken today, millions of
-                  tools, hundreds of tabs, and a lack of integration results in
-                  a
-                </p>
-              </>
-            }
-            heading="The Problem"
-          />
-          <Paragraph heading="Heading #2" quote={quote} />
-          <Paragraph
-            heading="Heading #2"
-            style={{ marginTop: "1.2rem" }}
-            people={People}
-          />
-        </Blog>
-      </div>
+              </p>
+            </>
+          }
+          heading="The Problem"
+        />
+        <Paragraph heading="Heading #2" quote={quote} />
+        <Paragraph
+          heading="Heading #2"
+          style={{ marginTop: "1.2rem" }}
+          people={People}
+        />
+      </Blog>
     </>
   );
 }

@@ -37,6 +37,8 @@
                 position: absolute;
                 width: 2.1rem;
                 height: 2.1rem;
+                font-family: "Gt-Whelshime-Light", sans-serif;
+
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
@@ -45,8 +47,8 @@
                 bottom: 100%;
                 transform: translate(-4px, 9px);
                 text-align: center;
-                font-family: "Gt-Whelshime", sans-serif;
-                font-weight: 500;
+                // font-family: "Gt-Whelshime", sans-serif;
+                // font-weight: 500;
 
             }
         }

@@ -22,12 +22,12 @@ const Navbar = () => {
       <div className={classes.navbar__cta}>
         <Image src={TwitterGreyIcon} alt="github grey icon" />
         <Image src={GithubGreyIcon} alt="github grey icon" />
-        <button>
+        {/* <button>
           Join Waitlist{" "}
           <div>
             <Image src={ArrowLeftIcon} alt="arrow left" />
           </div>
-        </button>
+        </button> */}
       </div>
     </nav>
   );

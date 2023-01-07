@@ -32,7 +32,7 @@ const Paragraph: React.FC<ParagraphProps> = (props) => {
       {people && (
         <div className={classes.blog__paragraph__people}>
           {people.map((person, i) => (
-            <div className={classes.person_info}>
+            <div key={i} className={classes.person_info}>
               <Image src={person.image} alt="Person Image" />
               <span>{person.name}</span>
               <span>{person.position}</span>

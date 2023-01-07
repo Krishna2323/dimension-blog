@@ -26,7 +26,7 @@
     }
 
     &__info {
-        padding-bottom: 3.2rem;
+        padding-bottom: 2.4rem;
 
         &__heading {
             margin-bottom: 1.6rem;
@@ -60,9 +60,10 @@
         }
 
         &__text {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             color: #787878;
             line-height: 3.2rem;
+            font-family: "Gt-Whelshime-Light", sans-serif;
 
             & br {
                 height: 1px;
@@ -88,7 +89,7 @@
 
         &__quote {
             padding: 2.4rem;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             color: #787878;
             line-height: 3.2rem;
             border: 1px solid rgba(216, 216, 216, 0.4);

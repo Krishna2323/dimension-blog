@@ -1,0 +1,49 @@
+.hero {
+    text-align: center;
+    padding: 8.5rem 19rem;
+
+    &__subheading {
+        line-height: 45.8px;
+        color: #B5B5B5;
+        font-size: 4rem;
+    }
+
+    &__heading {
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 110px;
+        color: #000;
+        margin-top: 1.8rem;
+
+        & span {
+            background: linear-gradient(190.71deg, #FFCC4A 30.39%, #FFAC4A 79.08%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+
+    &__images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        align-items: center;
+        margin-top: 7rem;
+        gap: 2.7rem;
+
+        & div {
+            flex-direction: 0 0 calc(50% - 1.4rem);
+            border-radius: 10px;
+            overflow: hidden;
+
+            img {
+                display: flex;
+                align-items: flex-start;
+                transform: translateY(-16.3rem);
+                width: 100%;
+                object-fit: scale-down;
+            }
+        }
+    }
+}

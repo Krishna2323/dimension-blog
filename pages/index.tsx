@@ -2,9 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Blog from "../components/Blog/Blog";
+import BlogImage from "../components/Blog/components/Image/BlogImage";
 import Paragraph from "../components/Blog/components/Paragraph/Paragraph";
 import { People } from "../data/investorsInfo";
-import BlogImage from "../public/images/Blog/blog-image-1.png";
+import BlogImage1 from "../public/images/Blog/blog-image-1.png";
 
 let quote = {
   text: "“Dimension is solving for one of the biggest problems in the development space and I’m excited to join them in their journey!”",
@@ -25,7 +26,11 @@ export default function Home() {
         subheading="sub-heading"
         description="description"
       >
-        <Image src={BlogImage} alt="Blog image" />
+        <BlogImage
+          caption="Manage your projects on Dimension."
+          src={BlogImage1}
+          alt="Blog image"
+        />
         <Paragraph
           text={
             <>

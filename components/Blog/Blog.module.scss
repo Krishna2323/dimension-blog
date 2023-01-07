@@ -1,16 +1,30 @@
 .blog {
     padding: 9.5rem 16.4rem;
 
-    & img {
-        width: 100%;
-        object-fit: contain;
-        height: fit-content;
-        padding: 3.2rem 0 3.8rem;
+    &__image {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 3.2rem 0 2.4rem;
+        border-bottom: 1px solid rgba(216, 216, 216, 0.4);
+        border-top: 1px solid rgba(216, 216, 216, 0.4);
+
+        & img {
+            width: 100%;
+            object-fit: contain;
+            height: fit-content;
+        }
+
+        & span {
+            display: block;
+            margin: 0 auto;
+            color: #787878;
+            font-size: 1.6rem;
+        }
     }
 
     &__info {
         padding-bottom: 3.2rem;
-        border-bottom: 1px solid rgba(216, 216, 216, 0.4);
 
         &__heading {
             margin-bottom: 1.6rem;
@@ -66,7 +80,7 @@
 
             & p {
                 padding-top: 18px;
-                border-top: 1px solid rgba(216, 216, 216, 0.4);
+                // border-top: 1px solid rgba(216, 216, 216, 0.4);
             }
         }
 

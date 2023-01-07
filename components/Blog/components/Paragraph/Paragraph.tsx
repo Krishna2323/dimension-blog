@@ -20,7 +20,7 @@ const Paragraph: React.FC<ParagraphProps> = (props) => {
   return (
     <div className={classes.blog__paragraph}>
       <span className={classes.blog__paragraph__heading}>{heading}</span>
-      <p className={classes.blog__paragraph__text}>{text}</p>
+      <div className={classes.blog__paragraph__text}>{text}</div>
 
       {quote && (
         <div className={classes.blog__paragraph__quote}>

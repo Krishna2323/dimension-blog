@@ -17,6 +17,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link href="#">Careers</Link>
+          <span className="badge">2</span>
         </li>
       </ul>
       <div className={classes.navbar__cta}>

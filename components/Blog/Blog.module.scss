@@ -1,5 +1,4 @@
 .blog {
-    padding: 8rem 16.4rem;
     max-width: 1200px;
     margin: 0 auto;
 
@@ -12,6 +11,7 @@
         border-top: 1px solid rgba(216, 216, 216, 0.4);
 
         & img {
+            margin-bottom: 1.6rem;
             width: 100%;
             object-fit: contain;
             height: fit-content;

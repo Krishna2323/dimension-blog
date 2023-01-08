@@ -1,0 +1,81 @@
+.blogs {
+    padding: 8rem 16.4rem;
+
+    &__inner {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        & h1 {
+            font-size: 4rem;
+            line-height: 4.6rem;
+            color: #2F2F2F;
+            font-weight: 600;
+            font-family: "Gt-Whelshime-Light", sans-serif;
+            padding-bottom: 3.2rem;
+            border-bottom: 1px solid rgba(216, 216, 216, 0.4);
+            margin-bottom: 2.4rem;
+        }
+
+        & .blog_card {
+            width: 100%;
+            // height: 7rem;
+            background-color: #F5F5F5;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: .6rem .6rem;
+            text-decoration: none;
+            color: #787878;
+            transition: all .2s;
+
+            &:hover {
+                background-color: transparent;
+
+                & img {
+                    transform: rotate(-2deg);
+                }
+            }
+
+            & img {
+                width: 18.8rem;
+                display: block;
+                margin: auto 0;
+                height: 12.9rem;
+                filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.09));
+                border-radius: 6px 2px 2px 6px;
+                // transform: rotate(-2deg);
+                object-fit: cover;
+                transition: all .2s;
+            }
+
+
+            &__info {
+                margin-left: 2.2rem;
+                padding: 2.4rem 0;
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+
+                & h2 {
+                    font-weight: 500;
+                    font-size: 2.8rem;
+                    line-height: 3.2rem;
+                    color: #2F2F2F;
+                }
+
+                & p {
+                    font-size: 1.8rem;
+                    font-family: "Gt-Whelshime-Light", sans-serif;
+                    line-height: 2.1rem;
+                }
+
+                & span {
+                    font-family: "Gt-Whelshime-Light", sans-serif;
+                    font-size: 1.4rem;
+                    line-height: 1.6rem;
+                }
+            }
+        }
+    }
+}

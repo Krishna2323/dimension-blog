@@ -26,7 +26,7 @@ const Blog: React.FC<BlogPropsType> = (props) => {
   } = props;
 
   return (
-    <div style={{ padding: "8rem 16.4rem;" }}>
+    <div style={{ padding: "8rem 16.4rem" }}>
       <div className={classes.blog}>
         <div className={classes.blog__info}>
           <h1 className={classes.blog__info__heading}>{title}</h1>

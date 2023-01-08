@@ -40,9 +40,9 @@
             img {
                 display: flex;
                 align-items: flex-start;
-                transform: translateY(-16.3rem);
                 width: 100%;
                 object-fit: scale-down;
+                height: fit-content;
             }
         }
     }

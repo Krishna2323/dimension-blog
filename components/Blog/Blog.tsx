@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import classes from "./Blog.module.scss";
 
-const Blog: React.FC<{
+type BlogPropsType = {
   children?: React.ReactNode;
   title: string;
   description: string;
@@ -12,7 +12,9 @@ const Blog: React.FC<{
   writerAvatar: StaticImageData;
   publishedDate: string;
   socialLink: string;
-}> = (props) => {
+};
+
+const Blog: React.FC<BlogPropsType> = (props) => {
   const {
     title,
     description,

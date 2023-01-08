@@ -25,7 +25,7 @@ const Blogs: React.FC<{ children?: React.ReactNode | React.ReactNode[] }> = (
   return (
     <div className={classes.blogs}>
       <div className={classes.blogs__inner}>
-        <h1>The Dimention Blog</h1>
+        <h1>The Dimension Blog</h1>
         {blogsData &&
           blogsData.map((blogData, i) => <BlogCard {...blogData} key={i} />)}
       </div>

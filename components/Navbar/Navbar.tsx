@@ -10,10 +10,10 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className={classes.navbar}>
-      <Image src={dimentionLogo} alt="dimension logo" />
+      <Image width={33} height={46} src={dimentionLogo} alt="dimension logo" />
       <ul className={classes.navbar__links}>
         <li>
-          <Link href="/routes">Blogs</Link>
+          <Link href="/">Blogs</Link>
         </li>
         <li>
           <Link href="/">Careers</Link>

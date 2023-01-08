@@ -7,6 +7,7 @@ import Paragraph from "../components/Blog/components/Paragraph/Paragraph";
 import { People } from "../data/investorsInfo";
 import BlogImage1 from "../public/images/Blog/blog-image-1.png";
 import Hero from "../components/HeroSections/Hero";
+import Blogs from "../components/Blogs/Blogs";
 
 let quote = {
   text: "“Dimension is solving for one of the biggest problems in the development space and I’m excited to join them in their journey!”",
@@ -22,7 +23,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero />
+      <Blogs />
     </>
   );
 }

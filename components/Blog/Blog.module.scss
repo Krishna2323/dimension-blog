@@ -44,6 +44,44 @@
             line-height: 27px;
             color: #787878;
             font-family: "Gt-Whelshime-Light", sans-serif;
+            margin-bottom: 1.6rem;
+        }
+
+        &__writer {
+            display: flex;
+            align-items: center;
+            font-size: 1.6rem;
+            color: #787878;
+            line-height: 18px;
+            gap: .8rem;
+            font-family: "Gt-Whelshime-Light", sans-serif;
+
+            & span {
+                &:nth-of-type(1) {
+                    width: 4px;
+                    height: 4px;
+                    background-color: #787878;
+                    border-radius: 40rem;
+                }
+
+            }
+
+            & a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: #787878;
+                gap: .8rem;
+                transition: all .15s;
+
+                &:hover {
+                    color: #2F2F2F;
+                }
+
+                & img {
+                    border-radius: 50%;
+                }
+            }
         }
     }
 

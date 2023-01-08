@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import TejasRavishankarAvatar from "../public/images/Investors/tejas-ravishankar.svg";
 import Link from "next/link";
 import Blog from "../components/Blog/Blog";
 import BlogImage from "../components/Blog/components/Image/BlogImage";
@@ -25,6 +25,10 @@ export default function Home() {
         title="Blog title"
         subheading="sub-heading"
         description="description"
+        writer="Tejas Ravishankar"
+        writerAvatar={TejasRavishankarAvatar}
+        publishedDate="12th December 2022"
+        socialLink="https://twitter.com/suptejas"
       >
         <BlogImage
           caption="Manage your projects on Dimension."

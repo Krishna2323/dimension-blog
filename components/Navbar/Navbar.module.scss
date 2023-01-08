@@ -1,20 +1,26 @@
 .navbar {
     width: 100%;
-    // height: 10rem;
-    // padding: 2.8rem ;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.7rem 3.9rem;
+    padding: min(3.6vh, 3.6vw) min(4.9vh, 4.9vw);
+    ;
     position: relative;
+
+    &>img {
+        width: min(4.5vh, 4.5vw);
+        height: min(6.3vh, 6.3vw);
+
+        @media (max-width:37.5em) {
+            width: min(6.5vh, 6.5vw);
+            height: min(7.4vh, 7.4vw);
+        }
+    }
 
     &__links {
         display: flex;
         list-style: none;
-        gap: 3.6rem;
-        // position: absolute;
-        // left: 50%;
-        // transform: translateX(-50%);
+        gap: min(3.6vh, 3.6vw);
 
         & li {
             position: relative;
@@ -62,6 +68,13 @@
         & img {
             cursor: pointer;
             transition: all .2s;
+            width: min(4.5vh, 4.5vw);
+            height: min(4.5vh, 4.5vw);
+
+            @media (max-width:37.5em) {
+                width: min(6vh, 6vw);
+                height: min(6vh, 6vw);
+            }
 
             &:hover {
                 filter: invert(.7);

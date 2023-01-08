@@ -1,5 +1,9 @@
 .blogs {
-    padding: 8rem 16.4rem;
+    padding: min(11vh, 11vw) min(10vh, 10vw);
+
+    @media (max-width:37.5em) {
+        padding: min(8vh, 8vw) min(5vh, 5vw);
+    }
 
     &__inner {
         max-width: 1200px;
@@ -18,8 +22,7 @@
 
         & .blog_card {
             width: 100%;
-            // height: 7rem;
-            background-color: #F5F5F5;
+            background-color: transparent;
             border-radius: 8px;
             overflow: hidden;
             display: flex;
@@ -29,8 +32,22 @@
             color: #787878;
             transition: all .2s;
 
+            @media (max-width:34.375em) {
+                flex-direction: column;
+                align-items: flex-start;
+
+                & img {
+                    width: 100%;
+                    height: 22rem;
+                }
+
+                &__info {
+                    margin-left: 0;
+                }
+            }
+
             &:hover {
-                background-color: transparent;
+                background-color: #F5F5F5;
 
                 & img {
                     transform: rotate(-2deg);
@@ -47,6 +64,11 @@
                 // transform: rotate(-2deg);
                 object-fit: cover;
                 transition: all .2s;
+
+                @media (max-width:34.375em) {
+                    width: 100%;
+                    height: 22rem;
+                }
             }
 
 
@@ -56,6 +78,10 @@
                 display: flex;
                 flex-direction: column;
                 gap: 1.2rem;
+
+                @media (max-width:34.375em) {
+                    margin-left: 0;
+                }
 
                 & h2 {
                     font-weight: 500;

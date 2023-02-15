@@ -18,6 +18,9 @@
             padding-bottom: 3.2rem;
             border-bottom: 1px solid rgba(216, 216, 216, 0.4);
             margin-bottom: 2.4rem;
+            @media (max-width:37.5em) {
+                font-size: 3.2rem;
+            }
         }
 
         & .blog_card {
